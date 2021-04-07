@@ -12,7 +12,7 @@ app = Flask(__name__, static_url_path='/static')
 headers = {
         "Content-Type": "application/json",
         "Accept": "application/hal+json",
-        "x-api-key": "860393E332148661C34F8579297ACB000E15F770AC4BD945D5FD745867F590061CAE9599A99075210572"
+        "x-api-key": "860393E332148661C34F8579297ACB000E15F770AC4BD945D5FD745867F590061CAE9599A99075210572",
         }
 
 
@@ -77,7 +77,7 @@ def example():
 # You can add more pages to your app, like this:
 @app.route('/myroute')
 def myroute():
-    mydata = [{'name': 'apple'}, {'name': 'mango'}, {'name': 'banana'}]
+    mydata = [{'name': 'kiwi'}, {'name': 'mango'}, {'name': 'banana'}]
 
     return render_template('mytemplate.html', items=mydata)
 
