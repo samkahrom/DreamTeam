@@ -57,7 +57,7 @@ def example():
 
     # Example of API call to get deals
     base_url = "https://api-test.lime-crm.com/api-test/api/v1/limeobject/deal/"
-    params = "?_limit=50"
+    params = "?_limit=50&dealstatus=agreement&max-closeddate=2020-12-31&min-closeddate=2020-01-01"
     url = base_url + params
     response_deals = get_api_data(headers=headers, url=url)
 
