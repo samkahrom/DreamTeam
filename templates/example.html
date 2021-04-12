@@ -1,11 +1,40 @@
+<!-- Tyylitiedosto importoidaan html tiedostoon -->
+<!-- class luokat html elementeissä vastaa styles.css tiedostossa olevia tyylioliota -->
+<!-- jinja template siis kysessä -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
 {% extends 'layout.html' %}
-
 {% block body %}
-	<h1>Data for Deals</h1>
+	<div>
+		<h1 class="heading-primary">
+		<span class="heading-primary--main">
+			Data for Deals
+		</span>
+		<span class="heading-primary--sub">
+			2020
+		</span>
+	</div>
+	<div class="row">
+		<h3 class="heading-secondary">Average value for a won deals</h3>
+		<p class="paragraph">{{ avg }}</p>
+	</div>
+		
+	<h3 class="heading-secondary">Number of won deals per month</h3>
+	<div class="monthlyDeals">
+		<ul>
+			<!-- Käydään jokainen tuplen lohko läpi ja tulostetaan sen 0 ja 1 indeksin arvot -->
+			{% for item in mnth %}
+			<li class="list-item">
+				<p class="list-item--1">
+					{{ item[0] }}
+				</p>
+				<p class="list-item--2">
+					{{ item[1] }}
+				</p>
+				
+			</li>		
+			{% endfor %}
 
-		{% for deal in deals %}
-		<p>{{ deal }}</p>
-		{% endfor %}
-
+		</ul>
+	</div>
 	<br>
 {% endblock %}

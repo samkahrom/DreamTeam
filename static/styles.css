@@ -1,0 +1,87 @@
+.monthlyDeals {
+    border-radius: 3px;
+    border: 1px solid  rgb(202, 161, 146);
+    box-shadow: 0px 0.5px 2px rgb(174, 164, 164);
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid rgb(118, 102, 102);
+}
+
+
+.heading-primary--main {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+}
+
+.heading-secondary{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(
+        to right,
+        rgb(202, 161, 146),
+        rgb(152, 152, 153)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.heading-secondary:nth-child(1) {
+    margin-left: 15px;
+}
+
+.paragraph {
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0 , 0.2);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    width: 15%;
+    padding: 10 20px;
+    box-shadow: 0.2px 0.2px 1px rgb(48, 48, 48);
+    margin-left: 20px;
+}
+
+ul {
+    padding: 20px 25px;
+}
+
+.list-item {
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 5px;
+    color:  rgb(33, 32, 32);
+}
+
+.list-item--2{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+.row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
